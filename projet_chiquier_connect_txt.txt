@@ -1,0 +1,61 @@
+========================================================================
+ECHIQUIER CONNECTE OPEN-SOURCE (RASPBERRY PI & CAO)
+========================================================================
+
+Projet open-source visant a concevoir un echiquier physique intelligent
+et reproductible, combinant conception mecanique (CAO / impression 3D),
+electronique embarquee et automatisme pilote par Raspberry Pi.
+
+
+1. OBJECTIFS DU PROJET
+------------------------------------------------------------------------
+- Detection automatique des coups : Suivi en temps reel de la position
+  des pieces sur le plateau (capteurs a effet Hall / matrice).
+- Retour visuel et interactivite : Indication des coups legaux, des
+  deplacements de l'adversaire ou des erreurs via une matrice de LEDs
+  integree sous les cases.
+- Jeu local ou a distance : Affrontement contre un moteur d'echecs
+  embarque (ex. Stockfish) ou connexion a des plateformes en ligne
+  (Lichess / Chess.com via API).
+- 100 % Open-Source : Partage complet des fichiers sources pour permettre
+  a tout maker, etudiant ou passionne de reproduire le systeme.
+
+
+2. ARCHITECTURE & TECHNOLOGIES PREVUES
+------------------------------------------------------------------------
+* Systeme embarque        : Raspberry Pi (OS Linux), Python 3
+* Electronique & Capteurs : Capteurs a effet Hall (aimants sous les
+                            pieces), LEDs adressables (WS2812B),
+                            multiplexeurs
+* Mecanique & Boitier     : Modelisation CAO, pieces imprimees en 3D
+                            (PLA / PETG)
+* Documentation           : Schemas electriques detailles, nomenclature
+                            (BOM) et guide d'assemblage
+
+
+3. STRUCTURE DU DEPOT (EN COURS DE DEVELOPPEMENT)
+------------------------------------------------------------------------
+/cad/          -> Fichiers sources CAO et exports STL prets a imprimer
+/schematics/   -> Schemas electriques et plans de cablage
+/src/          -> Code source Python (logique de jeu, capteurs, LEDs)
+/docs/         -> Documentation technique et tutoriel de montage
+projet.txt     -> Presentation generale du projet
+
+
+4. FEUILLE DE ROUTE (ROADMAP)
+------------------------------------------------------------------------
+[x] Definition de l'architecture globale et choix des composants
+[ ] Modelisation CAO du chassis et des pieces (integration des aimants)
+[ ] Realisation des schemas electriques et test de la matrice
+[ ] Developpement du script principal sur Raspberry Pi (Stockfish/API)
+[ ] Redaction du guide complet de fabrication
+
+
+5. CONTRIBUTION & LICENCE
+------------------------------------------------------------------------
+Les suggestions, ameliorations mecaniques ou optimisations logicielles
+sont les bienvenues.
+
+Ce projet est mis a disposition en libre acces pour encourager le
+partage de connaissances en automatisme, electronique et fabrication
+numerique.
